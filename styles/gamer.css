@@ -7,3 +7,59 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Work Sans', sans-serif;
 }
+/* navbar styles */
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 200px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    width: 80px;
+    height: 40px;
+    margin-right: 20px;
+}
+.pink-clr{
+    color: #FF42A5;
+}
+.section-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #0B0223;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+.follow-container{
+    margin-left: 20px;
+    align-items: center;
+}
+.follow-container>li{
+    list-style: none;
+}
+ul>li{
+    list-style: none;
+    margin-left: 30px;
+}
+li>a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3C354F;
+}
+.nav-img{
+    margin-left: 10px;
+}
+.follow-style{
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+width: 250px;
+height: 50px;
+text-align: center;
+padding: 10px 0px 0px 0px;
+}
