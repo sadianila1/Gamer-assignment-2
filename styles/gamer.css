@@ -195,8 +195,10 @@ top: 50px;
 }
 /* button section styles */
 .button-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     justify-content: center;
+    align-items: center;
     gap: 50px;
     padding: 40px;
 }
@@ -275,4 +277,85 @@ font-weight: 500;
 margin-top: 30px;
 margin-left: 70px;
 
+}
+/* responsive media queries */
+@media screen and (max-width:576px) {
+    header{
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav-section ul>li,
+    .follow-container li
+    {
+        margin-top: 15px;
+        
+    }
+    .banner-section{
+        margin-left: 50px;
+    }
+    .nav-section ,
+    .nav-section ul,
+    .banner-section,
+    .video-container,
+    .instant-section
+    {
+        flex-direction: column;
+    }
+    .video-section{
+        padding: 20px;
+        margin-left: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .instant-section{
+        padding: 10px;
+        margin-left: 200px;
+        gap: 10px;
+    }
+    .instant-img2{
+        position: relative;
+        left: 100px;
+        top: 0px;
+    }
+    .section-title-in,.section-description-in{
+        text-align: center;
+    }
+    .button-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+        margin-left: 250px;
+        gap: 0px;
+    }
+    .button-item{
+        gap: 5px;
+    }
+    footer{
+        width: 700px;
+    }
+    
+}
+/* for medium device */
+@media  screen and (min-width:576px) and (max-width:960px) {
+    .nav-section,
+    .banner-section,
+    .video-container,
+    .instant-section,
+    .button-container
+    {
+        flex-direction: column;
+    }
+    .instant-section{
+        text-align: center;
+        align-items: center;
+    }
+    .banner-section{
+        margin-left: 50px;
+    }
+    header,main{
+       
+    }
+    
 }
