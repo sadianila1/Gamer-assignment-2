@@ -125,6 +125,7 @@ border: none;
     display: flex;
     margin-top: 30px;
     gap: 24px;
+    margin-left: 350px;
 }
 .video-img{
     border-radius: 16px;
@@ -238,10 +239,11 @@ margin-top: 100px;
     align-items: center;
     justify-content: center;
 }
-ul{
-    display: flex;
+.foot-info ul{
+    display:flex;
     align-items: center;
     justify-content: center;
+    gap: 60px;
 }
 .foot-info{
     font-size: 18px;
@@ -260,14 +262,15 @@ ul{
     gap: 50px;
     margin-top: 100px;
 }
-.foot-description ul>li{
+.foot-description ul{
     display: flex;
     justify-content: center;
     color: rgba(255, 255, 255, 0.60);
 font-size: 16px;
 font-weight: 500;
-margin-left: 60px;
+margin-left: 20px;
 margin-top: 80px;
+gap: 70px;
 }
 .foot-para{
     color: rgba(255, 255, 255, 0.60);
@@ -309,6 +312,9 @@ margin-left: 70px;
         align-items: center;
         justify-content: center;
     }
+    .video-container{
+        margin-left: 0px;
+    }
     .instant-section{
         padding: 10px;
         margin-left: 200px;
@@ -334,6 +340,33 @@ margin-left: 70px;
     }
     footer{
         width: 700px;
+        margin: auto;
+        height: 800px;
+    }
+    .foot-info ul{
+        gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+    }
+    .foot-icon{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+        padding: 30px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+
+    .foot-description ul{
+        gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+    }
+    .foot-para{
+        margin-left: 0px;
+        margin-top: 40px;
     }
     
 }
@@ -347,6 +380,28 @@ margin-left: 70px;
     {
         flex-direction: column;
     }
+    .video-section{
+        padding: 20px;
+        margin-left: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .video-container{
+        margin-left: 0px;
+    }
+    .instant-section{
+        padding: 10px;
+        margin-left: 200px;
+        gap: 10px;
+    }
+    .instant-img2{
+        position: relative;
+        right: 10px;
+        top: 0px;
+    }
+    .section-title-in,.section-description-in{
+        text-align: center;
+    }
     .instant-section{
         text-align: center;
         align-items: center;
@@ -354,8 +409,45 @@ margin-left: 70px;
     .banner-section{
         margin-left: 50px;
     }
-    header,main{
-       
+    .button-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+        margin-left: 250px;
+        gap: 0px;
+    }
+    .button-item{
+        gap: 5px;
+    }
+    footer{
+        width: 800px;
+        padding: 100px;
+        height: 800px;
+    }
+    .foot-info ul{
+        gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+    }
+    .foot-icon{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+        padding: 30px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+
+    .foot-description ul{
+        gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+    }
+    .foot-para{
+        margin-left: 0px;
+        margin-top: 40px;
     }
     
 }
